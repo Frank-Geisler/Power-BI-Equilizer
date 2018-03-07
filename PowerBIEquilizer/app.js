@@ -89,7 +89,8 @@ $(document).ready(function () {
         // FGE: Post Data to Power BI Service
         jQuery.ajax({
             type: "POST",
-            url: "https://api.powerbi.com/beta/fe980433-e1f3-48c3-81c1-4e0b29c45a6f/datasets/0a059705-bd49-4427-875c-d5d17e527a3c/rows?key=wj5GYIcmDqHBfc4hk00nVihQyuIUWTY3aPglOHXzoRkV3evaBlayBxKECR2y%2BhODB1dFdodbZnoyaQhvx4Hx%2Bw%3D%3D",
+            // FGE: Here you have to paste your URL from Power BI
+            url: "https://api.powerbi.com/<yourKey>",
             cache: false,
             data: powerbi_dataset,
             dataType: "json",
